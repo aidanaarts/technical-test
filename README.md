@@ -4,5 +4,5 @@ Files for my Outerbox technical assessment. I choose to do option 1 utilizing HT
 ### Installation
 
 
-1. Download the zip file
+1. Download the zip file by clicking on code -> download zip
 2. Open via a live server or by opening the html file on your browser.
