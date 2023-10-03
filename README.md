@@ -4,5 +4,5 @@ Files for my Outerbox technical assessment. I choose to do option 1 utilizing HT
 ### Installation
 
 
-1. Clone the repository: `git clone https://github.com/yourusername/yourproject.git`
+1. Download the zip file
 2. Open via a live server or by opening the html file on your browser.
