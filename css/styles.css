@@ -1,0 +1,308 @@
+/* Brand color variables */
+:root {
+    --brand-primary-color:#2D394A;
+    --brand-secondary-color: #FFFFFF;
+    --brand-tertiary-color: #A1D9D3;
+    --brand-accent-color: #ED9E98;
+    --error-color-1:#CF4127;
+    --error-color-2:#FDF9F7;
+
+    --gray:#454545;
+    --light-gray:#A2B9C2;
+}
+
+/* Background color for the page */
+body {
+    background-color: var(--brand-primary-color);
+
+}
+
+/* Style the secondary heading */
+h2 {
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    text-align:center;
+}
+
+/* Style the main section with a gradient background */
+main {
+    background: linear-gradient(176deg, var(--brand-primary-color) 26%,var(--brand-secondary-color) 26%);
+}
+
+/* Style the logo */
+.logo img {
+    height:50px;
+    width:215px;
+}
+
+/* Style the hero section with a gradient background */
+.hero {
+    color:var(--brand-secondary-color);
+}
+
+/* Style the hero text */
+.hero-text h1 {
+    font-family: "Playfair Display";
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 75px;
+}
+.hero-text p {
+    font-family: "Roboto";
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+/* Style the hero list */
+#hero-list {
+    list-style: none;
+    padding: 0;
+}
+
+#hero-list li {
+    display:flex;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.checkmark {
+    font-size: 20px;
+    color: var(--brand-tertiary-color);
+    margin-right: 10px;
+}
+
+/* Style the form section */
+form {
+    background-color: var(--brand-secondary-color);
+    border-radius: 7px;
+    background-color: var(--brand-secondary-color);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+.form-alt h4{
+    color:#CE427A;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3.83px;
+    line-height: 29px;
+    text-align:center;
+}
+.form-title {
+    color: var(--brand-primary-color);
+    font-family: "Playfair Display";
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    text-align:center;
+}
+.form-group {
+    color:var(--gray);
+
+}
+
+.submit-btn{
+    height: 45px;
+    width: 185px;
+    border-radius: 3px;
+    background-color: var(--brand-primary-color);
+    color:var(--brand-secondary-color);
+    border: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 25px;
+
+}
+
+/* Style the aside text */
+.aside-text {
+    margin-top:30%;
+    color: var(--gray);
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+}
+
+/* Style the row separating the hero and content sections */
+.hero-main > .row {
+    border-bottom: solid 1px var(--light-gray);
+}
+
+/* Style the content section background */
+.content {
+    background-color: var(--brand-secondary-color);
+}
+
+/* Style the cards */
+.card-img-top {
+    background-color: var(--brand-accent-color);
+}
+
+.card {
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+.card-body {
+    text-align:center;
+}
+
+/* Style the footer */
+footer {
+    color:var(--brand-secondary-color);
+}
+.footer-logo > img {
+    height:40px;
+    width:46px;
+}
+
+/* Style the error field and message */
+.error-field {
+    border: 1px solid var(--error-color-1);
+    background-color: var(--error-color-2);
+
+}
+
+.error-message {
+    font-family: 'Roboto';
+    color:var(--error-color-1);
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Update the aside text color and margin */
+    .aside-text {
+        color:var(--brand-secondary-color);
+        margin-top: 0px;
+    }
+
+    /* Update the header row flex direction */
+    .header > .row {
+        flex-direction: column-reverse;
+    }
+
+    /* Update the banner styles */
+    .banner {
+        display:block !important;
+        background-color: #232E3E;
+        padding:10px;
+        text-align: end;
+    }
+
+    /* Update the logo styles */
+    .logo {
+        display:block !important;
+    }
+
+    .logo > img {
+        margin-top:40px;
+        margin-bottom:30px;
+        height:32.56px;
+        width:140px;
+    }
+
+    /* Update column text alignment */
+    .col {
+        text-align: center;
+    }
+
+    /* Update call info margin */
+    .call-info {
+        margin-bottom: 10px;
+    }
+
+    /* Update hero-main padding */
+    .hero-main {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    /* Update hero section */
+    .hero {
+        background: linear-gradient(180deg,var(--brand-primary-color) 70%,var(--brand-secondary-color) 70%);
+    }
+
+    .hero-text {
+        margin-bottom: 25px;
+    }
+
+    .hero-text > h1 {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 48px;
+        margin-bottom: 35px;
+    }
+
+    .hero-main > .row {
+        margin:0px;
+    }
+
+    /* Update footer logo size and margins */
+    .footer-logo {
+        margin-top:16px;
+        margin-bottom:15px;
+    }
+    .footer-copyright {
+        margin-bottom: 41px;
+    }
+
+    /* Update form title h1 font size */
+    .form-title h1{
+        font-size: 24px;
+    }
+    .form-group {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h2 {
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 30px;
+        text-align: center;
+    }
+
+
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+
+    /* Update hero margin and padding */
+    .hero {
+        margin-top:5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Update header margin */
+    .header {
+        margin-bottom: 5%;
+    }
+
+    /* Update form title h1 font size */
+    .form-title h1{
+        font-size: 36px;
+    }
+
+    /* Update form group margins */
+    .form-group {
+        margin-top:6%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+}
+
